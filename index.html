@@ -9,6 +9,10 @@
     />
     <link rel="stylesheet" href="shared.css" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
+    />
   </head>
   <body>
     <header id="container">
@@ -17,8 +21,8 @@
       </div>
       <nav>
         <ul>
-          <li><a href="#">Destination</a></li>
-          <li><a href="#">About</a></li>
+          <li><a href="#" class="btn btn-warning">Destination</a></li>
+          <li><a href="#" class="btn btn-warning">About</a></li>
         </ul>
       </nav>
     </header>
@@ -27,11 +31,46 @@
         <div id="hero-content">
           <h1>Lorem ipsum dolor sit amet.</h1>
           <p>Lorem ipsum dolor sit.</p>
-          <a href="#">Lorem, ipsum dolor.</a>
+          <a href="#" class="btn btn-warning">Lorem, ipsum dolor.</a>
         </div>
       </section>
       <section></section>
     </main>
-    <footer></footer>
+    <footer class="m-5">
+      <p>
+        <a
+          class="btn btn-primary"
+          data-bs-toggle="collapse"
+          href="#collapseExample"
+          role="button"
+          aria-expanded="false"
+          aria-controls="collapseExample"
+        >
+          Link with href
+        </a>
+        <button
+          class="btn btn-primary"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseExample"
+          aria-expanded="false"
+          aria-controls="collapseExample"
+        >
+          Button with data-bs-target
+        </button>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+          Some placeholder content for the collapse component. This panel is
+          hidden by default but revealed when the user activates the relevant
+          trigger.
+        </div>
+      </div>
+      <br />
+      <br />
+      <br />
+    </footer>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
   </body>
 </html>
