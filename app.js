@@ -19,7 +19,7 @@ app.get('/about', function (req, res) {
   })
 
   app.get('/impresum', function (req, res) {
-    res.send('<h1>Hello impresum</h1><p>lorem ipsum dolore</p>')
+    res.send('<h1>Aktuele Zeit</h1><p>'+ new Date().toISOString()+'</p>')
   })
 
 app.listen(3000)
